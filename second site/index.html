@@ -23,7 +23,7 @@
   </head>
   <body>
     <section class="header">
-      <div class="wrap header-top">
+      <div class="header-top">
         <!-- <img class="photo" src="img/bg_header.png" alt="photo" />-->
         <div class="wrap top-navigation">
           <a class="text-logo-navigation" href="index.html">
@@ -55,6 +55,14 @@
           <button class="submit" type="submit">GET STARTED</button>
         </div>
       </div>
+      <!-- <div class="slider">
+        <button class="slider-btn-left">
+          <img src="img/left.svg" alt="photo" />
+        </button>
+        <button class="slider-btn-right">
+          <img src="img/right.svg" alt="photo" />
+        </button>
+      </div>-->
     </section>
 
     <section class="w-realization">
@@ -128,14 +136,12 @@
             mutationem consuetudium.
           </p>
         </div>
-        <div class="project-link">
-          <ul class="project-link-logo">
-            <li><a class="project-logo" href="#">All</a></li>
-            <li><a class="project-logo" href="#">Web Design</a></li>
-            <li><a class="project-logo" href="#">Mobile App</a></li>
-            <li><a class="project-logo" href="#">Illustration</a></li>
-            <li><a class="project-logo" href="#">Photography</a></li>
-          </ul>
+        <div class="wrap project-link">
+          <a class="project-logo" href="#">All</a>
+          <a class="project-logo" href="#">Web Design</a>
+          <a class="project-logo" href="#">Mobile App</a>
+          <a class="project-logo" href="#">Illustration</a>
+          <a class="project-logo" href="#">Photography</a>
         </div>
 
         <div class="wrap project-article">
@@ -212,21 +218,21 @@
             </p>
             <ul class="excellent-block">
               <li>
-                <i class="fas fa-chevron-circle-right"></i>Nam liber tempor cum
-                soluta nobis eleifend option;
+                <i class="excellent-right fas fa-chevron-circle-right"></i>Nam
+                liber tempor cum soluta nobis eleifend option;
               </li>
               <li>
-                <i class="fas fa-chevron-circle-right"></i>
+                <i class="excellent-right fas fa-chevron-circle-right"></i>
                 Option congue nihil imperdiet doming id quod mazim placerat
                 facer;
               </li>
               <li>
-                <i class="fas fa-chevron-circle-right"></i>Eodem modo typi, qui
-                nunc nobis videntur parum futurum;
+                <i class="excellent-right fas fa-chevron-circle-right"></i>Eodem
+                modo typi, qui nunc nobis videntur parum futurum;
               </li>
               <li>
-                <i class="fas fa-chevron-circle-right"></i>Investigationes
-                demonstraverunt lectores
+                <i class="excellent-right fas fa-chevron-circle-right"></i
+                >Investigationes demonstraverunt lectores
               </li>
             </ul>
           </div>
@@ -267,8 +273,8 @@
 
     <section class="recent-posts">
       <div class="wrap recent-posts-wrap">
+        <p class="wrap posts-title">Recent Posts.</p>
         <div class="posts">
-          <p class="wrap posts-title">Recent Posts.</p>
           <p class="posts-text">
             Investigationes demonstraverunt lectores legere me lius quod ii
             legunt saepius. Claritas est etiam processus dynamicus, qui sequitur
@@ -326,7 +332,7 @@
               erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci
               suscipit lobortis claritatem.
             </p>
-            <a class="text" href="#">Read More</a>
+            <a class="text-read" href="#">Read More</a>
           </div>
           <div class="footer-block-wrap">
             <div>
@@ -353,16 +359,16 @@
             <div>
               <p class="footer-title">Our Twitter</p>
               <p class="footer-inform">
-                @waxom Cum soluta nobis eleifend option congue nihil imperdiet
-                doming
+                <span class="colortext">@waxom</span>, Cum soluta nobis eleifend
+                option congue nihil imperdiet doming
               </p>
               <p class="footer-inform-mini">3 mins ago</p>
               <hr />
             </div>
             <div>
               <p class="footer-inform">
-                Mirum est #envato notare quam littera gothica, quam nunc putamus
-                parum anteposuerit litterarum
+                Mirum est <span class="colortext">#envato</span> notare quam
+                littera gothica, quam nunc putamus parum anteposuerit litterarum
               </p>
               <p class="footer-inform-mini">5 hours ago</p>
               <hr />
@@ -370,20 +376,32 @@
               <p class="footer-inform-mini">20 days ago</p>
             </div>
           </div>
-          <div class="footer-block-widget">
+          <div>
             <p class="footer-title">Dribbble Widget</p>
-            <img class="widget" src="img/ft_item.png" alt="" />
-            <img class="widget" src="img/ft_item2.png" alt="" />
-            <img class="widget" src="img/ft_item3.png" alt="" />
-            <img class="widget" src="img/ft_item4.png" alt="" />
+            <div class="footer-block-widget">
+              <div class="widget">
+                <img class="widget-img" src="img/ft_item.png" alt="" />
+              </div>
+              <div class="widget">
+                <img class="widget-img" src="img/ft_item2.png" alt="" />
+              </div>
+              <div class="widget">
+                <img class="widget-img" src="img/ft_item3.png" alt="" />
+              </div>
+              <div class="widget">
+                <img class="widget-img" src="img/ft_item4.png" alt="" />
+              </div>
+            </div>
           </div>
         </div>
         <div class="rights">
           <div class="wrap rights-wrap">
-            <p class="footer-inform">Copyright © 2015 Waxom</p>
-            <p class="footer-inform">Privacy Policy</p>
-            <p class="footer-inform">FAQ</p>
-            <p class="footer-inform">Su pport</p>
+            <ul class="rights-wrap">
+              <li><p class="rights-info">Copyright©2015 Waxom</p></li>
+              <li><p class="rights-info">Privacy Policy</p></li>
+              <li><p class="rights-info">FAQ</p></li>
+              <li><p class="rights-info">Support</p></li>
+            </ul>
           </div>
         </div>
       </section>
