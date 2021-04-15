@@ -56,11 +56,12 @@ body {
   color: #c7b299;
 }
 .card:hover {
-  background-image: #c7b299;
+  background-color: #c7b299;
 }
 .header-title {
   margin-top: 300px;
   text-align: center;
+  align-items: center;
 }
 .header-title-top {
   font-family: "Raleway", sans-serif;
@@ -79,12 +80,13 @@ body {
   text-align: center;
 }
 .header-title-end {
-  width: 563px;
-  padding-left: 330px;
+  text-align: center;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
+  width: 50%;
+  padding-left: 300px;
 }
 .slider {
   display: flex;
@@ -112,6 +114,9 @@ body {
   font-size: 34px;
   line-height: 39.92px;
 }
+.burger {
+  display: none;
+}
 .submit {
   align-items: center;
   font-family: "Roboto", sans-serif;
@@ -128,6 +133,7 @@ body {
   border: none;
   align-self: center;
   align-content: center;
+  text-align: center;
   cursor: pointer;
   outline: 0;
   transition: all 0.1s linear;
@@ -163,6 +169,7 @@ body {
   margin-top: 93px;
   cursor: pointer;
   transition: 0.5s;
+  text-align: center;
 }
 
 .realization-icon {
@@ -173,8 +180,6 @@ body {
   align-items: stretch;
   transition: transform 0.5s;
   border-bottom: 3px solid #f1eee9;
-  width: 70px;
-  margin-left: 100px;
 }
 
 .realization-block-card:hover .inform-img {
@@ -303,7 +308,7 @@ body {
   font-size: 16px;
   line-height: 20px;
   color: #8c8c8c;
-  text-align: center;
+
   width: 802px;
   margin-left: 200px;
 }
@@ -611,7 +616,7 @@ body {
   padding-left: 85px;
 }
 .partners-logo {
-  width: 210px;
+  width: 200px;
   height: 164px;
   left: 1282px;
   top: 144px;
@@ -709,16 +714,24 @@ body {
   line-height: 28px;
   color: #ffffff;
 }
+.footer-title-dribble {
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 28px;
+  color: #ffffff;
+  padding-left: 20px;
+}
 .footer-block-wrap {
   padding-top: 45px;
   padding-bottom: 20px;
-  margin-right: 45px;
 }
 .footer-block-wrap-widget {
   width: 268px;
+  padding-left: 20px;
 }
 .footer-block-left {
-  width: 340px;
+  width: 280px;
 }
 .footer-inform {
   font-weight: 300;
@@ -793,17 +806,103 @@ hr {
 }
 
 /* desktop */
-@media (max-width: 788px) {
+@media (max-width: 1024px) {
   .header-top {
     width: 100%;
+  }
+  .top-navigation {
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+  }
+  .slider {
+    display: none;
+  }
+  .logo {
+    margin-right: 0;
+    margin-left: 20px;
+    width: 130px;
+  }
+  .text-logo {
+    padding-top: 30px;
+    font-size: 16px;
+    text-align: left;
+  }
+
+  .purchase-text {
+    width: 670px;
+  }
+  .purchase-photo {
+    width: 700px;
+  }
+  .project-text {
+    width: 600px;
+  }
+  .project-link {
+    width: 60%;
+  }
+  .purchase-end-left {
+    padding-left: 12px;
+  }
+  .purchase-submit {
+    margin-right: 30px;
+  }
+  .present-text {
+    padding-left: 210px;
+  }
+  .wrap-project-article {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .counters-img-left {
+    padding-left: 30px;
+  }
+  .counters-block {
+    flex-wrap: nowrap;
+  }
+  .inform-wrap {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .counters-text {
+    width: 400px;
+  }
+
+  .partners-block {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .footer-block {
+    width: 100%;
+  }
+  .widget-img {
+    width: 90px;
+  }
+  .rights-wrap {
+    padding-left: 40px;
   }
 }
 
 /* tablet */
-@media (max-width: 450px) {
+@media (max-width: 488px) {
   .header-top {
     width: 460px;
     height: 804px;
+  }
+  .text-logo {
+    display: none;
+  }
+  .burger {
+    display: block;
+    width: 50px;
+    padding-right: 12px;
+    padding-top: 12px;
+  }
+  .logo {
+    padding-left: 20px;
+  }
+  .slider {
+    display: none;
   }
   .header-title {
     margin-top: 200px;
@@ -821,19 +920,10 @@ hr {
     text-align: center;
   }
   .header-title-end {
-    font-size: 15px;
-    text-align: center;
+    margin: auto;
   }
-
-  .submit {
-    margin-left: 515px;
-    margin-top: 39px;
-    width: 70px;
-    height: 23px;
-  }
-  .submit:active {
-    box-shadow: 0 2px 0 #7c7c7c;
-    transform: translateY(3px);
+  .project-link {
+    padding-left: 55px;
   }
   .realization-block {
     flex-direction: column;
@@ -854,17 +944,16 @@ hr {
   .wrap-purchse-end {
     flex-direction: column;
     align-items: center;
+    text-align: center;
   }
   .purchase-text {
     width: 400px;
     font-size: 16px;
     text-align: center;
-    padding-left: 2px;
   }
   .purchase-photo {
     width: 420px;
   }
-
   .purchase-end-title {
     font-size: 18px;
     margin-top: 44px;
@@ -878,12 +967,10 @@ hr {
     text-align: center;
   }
   .purchase-submit {
-    font-size: 14px;
     width: 120px;
     height: 35px;
-    align-self: center;
-    align-content: center;
     margin-top: 5px;
+    margin-left: 12px;
   }
   .purchase-submit:active {
     box-shadow: 0 2px 0 #7c7c7c;
@@ -896,16 +983,13 @@ hr {
   }
   .project-text {
     width: 340px;
+    margin-right: 200px;
   }
-
   .project-article {
-    padding-left: 25px;
+    padding-left: 65px;
   }
   .wrap-project-article {
     margin-bottom: 15px;
-  }
-  .project-link {
-    width: 25%;
   }
   .project-logo {
     border: 1px solid #ebebeb;
@@ -913,22 +997,25 @@ hr {
     height: 32px;
   }
   /*4*/
-
   .video-content {
     width: 600px;
+    text-align: center;
   }
   .video-present-photo {
-    margin-right: 155px;
+    margin-right: 115px;
   }
-
   .present-title {
-    margin-right: 180px;
+    margin-right: 75px;
   }
   .present-text {
     width: 370px;
-    padding-left: 25px;
+    padding-left: 70px;
   }
   /*5*/
+  .counters-block {
+    flex-direction: column;
+    align-items: center;
+  }
   .counters-title {
     font-size: 25px;
 
@@ -948,27 +1035,35 @@ hr {
     flex-direction: column;
     align-items: center;
   }
-
   .recent-posts {
     padding-top: 100px;
     padding-bottom: 114px;
   }
   .recent-posts-wrap {
-    flex-direction: column;
     padding-left: 55px;
+    align-items: center;
   }
   .posts-block {
     width: 300px;
-    height: 380px;
-    align-items: center;
+    margin-left: 40px;
+    margin-bottom: 12px;
   }
-
+  .posts-text {
+    width: 300px;
+    margin-left: 55px;
+  }
+  .dribble {
+    padding-right: 50px;
+  }
   .partners-block {
     flex-direction: column;
   }
   .footer-block {
     flex-direction: column;
     align-items: center;
+  }
+  .partners-logo {
+    margin-bottom: 30px;
   }
   .footer-block-wrap {
     align-items: center;
